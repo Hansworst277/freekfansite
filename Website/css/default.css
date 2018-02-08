@@ -1,0 +1,136 @@
+
+
+@keyframes swing {
+    20%  { transform: rotateX(0deg); }
+    30% { transform: rotateX(30deg); }
+    50% { transform: rotateX(-20deg); }
+    70% { transform: rotateX(10deg); }
+    90% { transform: rotateX(-5deg); }
+}
+
+#container {
+    margin: auto;
+    width: 1229px;
+    border: solid 1px #000000;
+    height: auto;
+}
+#header {
+    position: relative;
+    background-image: url('../img/freek.jpg');
+    background-color: #00FF00;
+    width: 100%;
+    height: 220px;
+
+}
+#header:hover{
+        animation: swing 3s ease-in-out;
+}
+#header h1 {
+    color: #DDFFDD;
+    margin-top: 0px;
+    padding-top: 80px;
+    font-size: 4em;
+    text-shadow: -2px 0 #99AA99, 0 2px #99AA99, 2px 0 #99AA99, 0 -2px #99AA99; /* lijn van 1 px rondom */
+
+}
+
+#nav {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    float: left;
+    background-color: rgba(255,255,255,0.4);
+    width: 100%;
+
+}
+#nav ul{
+    margin: 0;
+    float: left;
+    font-family: eurostile;
+    font-size: 16px;
+    list-style: none;
+
+}
+#nav li {
+    display: inline-block;
+    float: left;
+    border-right: solid 1px #003300;
+
+
+}
+#nav a {
+    color: #003300;
+    padding: 0 16px; /*top en bottom 0, left en right 16px */
+    text-decoration: none;
+}
+#nav a:hover {
+    text-decoration: underline;
+    color: #FF00FF;
+}
+
+h1 {
+    font-family: verdana;
+    font-size: 20px;
+    color: #44BB44;
+    text-align: center;
+    margin: 50px 5px 5px 0px;
+}
+h2 {
+    font-family: verdana;
+    font-size: 14px;
+    color: #229922;
+    text-align: center;
+    margin-left: 10px;
+}
+
+h3 {
+    font-family: verdana;
+    font-size: 16px;
+    color: #007700;
+    text-align: center;
+    margin-left: 10px;
+}
+h3 + p {
+    margin-top:0px;
+}
+
+h1.probeersel ~ p {
+    color: red;
+}
+
+p {
+    font-family: tahoma;
+    font-size: 14px;
+    color: #006600;
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+
+#content p:first-line {
+    font-variant: small-caps;
+}
+
+
+#tabelletje td:nth-of-type(2n) {
+    background-color: rgba(200,200,200,0.5);
+}
+#tabelletje tr:nth-of-type(2n) {
+    background-color: rgba(150,150,150,1);
+}
+
+fieldset {
+    border: none;
+}
+
+canvas {
+    border: solid 1px #000;
+    background-color: #999;
+}
+/*zie blz 20 CSS3 Grieg */
+div:target {
+    background: yellow;
+}
+
